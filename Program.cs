@@ -9,6 +9,7 @@ namespace ConsoleApp1
             int[] array = new[] { 1, 2, 3, 3, 4, 5, 5 };
             MaxIndex(array);
         }
+        
         public static int MaxIndex(int []array)
         {
             if (array.Length == 0)
@@ -17,13 +18,9 @@ namespace ConsoleApp1
             int maxIndex = 0;
 
             for (int i = 0; i < array.Length; i++)
-            {
                 if (array[maxIndex] < array[i])
-                {
-                    maxIndex = i;
-                }
-            }
-
+                    maxIndex = i;                
+            
             return maxIndex;
         }
     }
